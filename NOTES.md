@@ -19,3 +19,6 @@ https://github.com/fisenkodv/dictum
 https://github.com/lukePeavey/quotable \*\*\*
 
 quotes - advice - jokes | animal img
+
+shiba
+http://shibe.online/

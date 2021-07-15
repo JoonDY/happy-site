@@ -1,3 +1,6 @@
+:root {
+}
+
 /* Standard */
 
 * {
@@ -13,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #333;
   line-height: 1.5;
   background-color: #fefefe;
@@ -25,10 +28,23 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
 img {
   max-width: 100%;
+  max-height: 100%;
   display: block;
+  object-fit: contain;
 }
+
+/* Containers & Util */
 
 .wrapper {
   display: flex;
@@ -41,4 +57,69 @@ img {
 
 .sub-wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: rgb(255, 225, 225);
+}
+
+/* Content */
+
+.header {
+  margin: 5rem auto;
+}
+
+.content-chooser {
+  margin-bottom: 3rem;
+}
+
+.content {
+  width: 95%;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid black;
+}
+
+.animal {
+}
+
+.animal-chooser {
+  margin-bottom: 3rem;
+}
+
+.animal-img {
+  height: 75vh;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .content {
+    border: none;
+  }
+
+  .sub-wrapper {
+    width: 45%;
+  }
+
+  .sub-wrapper:first-child {
+    margin-right: 5rem;
+  }
 }

@@ -5,14 +5,15 @@ export const showContent = (event) => {
     showJoke();
   } else if (id === 'btn-quotes') {
     showQuotes();
-  } else if (id === 'btn-advice') {
-    showAdvice();
-  }
+  } else if (id === 'btn-dog') {
+    showDog();
+  } else if (id === 'btn-cat') {
+    showCat();
+  } 
 };
 
 const jokes = document.getElementById('show-joke');
 const quotes = document.getElementById('show-quote');
-const advice = document.getElementById('show-advice');
 const dogImg = document.getElementById('dog-img');
 const catImg = document.getElementById('cat-img');
 
@@ -23,18 +24,21 @@ const showJoke = () => {
 
 }
 
-const showAdvice = () => {
-  jokes.classList.add('hide');
-  quotes.classList.add('hide');
-  advice.classList.remove('hide');
-
-}
-
 const showQuotes = () => {
   jokes.classList.add('hide');
   quotes.classList.remove('hide');
   advice.classList.add('hide');
 
+}
+
+const showDog = () => {
+  dogImg.classList.remove('hide');
+  catImg.classList.add('hide');
+}
+
+const showCat = () => {
+  dogImg.classList.add('hide');
+  catImg.classList.remove('hide');
 }
 
 export const updateDOM = (element, type, data) => {

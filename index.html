@@ -5,10 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
   <title>Happy Sight</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div>
       <h1>One Day At a Time</h1>
     </div>
@@ -17,10 +20,9 @@
   <main class='wrapper'>
     <section class='sub-wrapper'>
       <div class="content-chooser">
-        <button class="btn-jokes" id="btn-jokes">Jokes</button>
-        <button class="btn-quotes" id="btn-quotes">Quotes</button>
-        <button class="btn-advice" id="btn-advice">Advice</button>
-        <button class="btn-refresh" id="btn-refresh">Refresh</button>
+        <button class="btn btn-jokes" id="btn-jokes">Jokes</button>
+        <button class="btn btn-quotes" id="btn-quotes">Quotes</button>
+        <button class="btn btn-refresh" id="btn-refresh">Refresh</button>
       </div>
 
       <div class="content" id="content">
@@ -29,12 +31,10 @@
         <div class="advice hide" id="show-advice"><h2 id="advice"></h2></div>
       </div>
     </section>
-    <section class='sub-wrapper'>
-      <div>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
+    <section class='sub-wrapper animal'>
+      <div class="animal-chooser">
+        <button class="btn btn-dog" id="btn-dog">Dog</button>
+        <button class="btn btn-cat" id="btn-cat">Cat</button>
       </div>
 
       <div class="animal-img">

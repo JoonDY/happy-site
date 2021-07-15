@@ -12,22 +12,13 @@ const initApp = () => {
 
   const btnJokes = document.getElementById('btn-jokes');
   const btnQuotes = document.getElementById('btn-quotes');
-  const btnAdvice = document.getElementById('btn-advice');
   const btnRefresh = document.getElementById('btn-refresh');
+  const btnDog = document.getElementById('btn-dog');
+  const btnCat = document.getElementById('btn-cat');
 
-  [btnJokes, btnQuotes, btnAdvice].forEach((btn) => {
+  [btnJokes, btnQuotes, btnDog, btnCat].forEach((btn) => {
     btn.addEventListener('click', showContent);
   });
 
   btnRefresh.addEventListener('click', fetchAll);
 };
-
-
-
-
-
-
-
-
-
-

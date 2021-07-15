@@ -2,7 +2,6 @@ import { updateDOM } from "./changeContent.js";
 
 export const fetchAll = () => {
   fetchJoke();
-  fetchAdvice();
   fetchQuote();
   fetchDogImg();
   fetchCatImg();
@@ -10,7 +9,6 @@ export const fetchAll = () => {
 
 const jokes = document.getElementById('jokes');
 const quotes = document.getElementById('quotes');
-const advice = document.getElementById('advice');
 const dogImg = document.getElementById('dog-img');
 const catImg = document.getElementById('cat-img');
 
@@ -31,15 +29,6 @@ const fetchJoke = () => {
 });
 };
 
-const fetchAdvice = () => {
-  fetch('https://api.adviceslip.com/advice', fetchSettings)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    updateDOM(advice, 'text', data.slip.advice);
-});
-};
 
 const fetchQuote = () => {
   fetch('https://api.quotable.io/random', fetchSettings)
