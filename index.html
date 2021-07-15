@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Happy Sight</title>
 </head>
 <body>
@@ -13,20 +14,22 @@
     </div>
   </header>
 
-  <main>
-    <section>
+  <main class='wrapper'>
+    <section class='sub-wrapper'>
       <div class="content-chooser">
         <button class="btn-jokes" id="btn-jokes">Jokes</button>
         <button class="btn-quotes" id="btn-quotes">Quotes</button>
         <button class="btn-advice" id="btn-advice">Advice</button>
+        <button class="btn-refresh" id="btn-refresh">Refresh</button>
       </div>
 
       <div class="content" id="content">
-        <div class="jokes" id="jokes"></div>
-        <div class="quotes" id="quotes"></div>
-        <div class="advice" id="advice"></div>
+        <div class="jokes hide" id="show-joke"><h2 id="jokes"></h2></div>
+        <div class="quotes hide" id="show-quote"><h2 id="quotes"></h2></div>
+        <div class="advice hide" id="show-advice"><h2 id="advice"></h2></div>
       </div>
     </section>
+    <section class='sub-wrapper'>
       <div>
         <label class="switch">
           <input type="checkbox">
@@ -35,16 +38,9 @@
       </div>
 
       <div class="animal-img">
-        <img class="dog-img" id="dog-img" src=""></img>
-        <img class="cat-img" id="cat-img" src=""></img>
+        <img class="dog-img hide" id="dog-img" src=""></img>
+        <img class="cat-img hide" id="cat-img" src=""></img>
       </div>
-
-      <div class="animal-fact">
-        <div class="dog-fact" id="dog-fact"></div>
-        <div class="cat-fact" id="cat-fact"></div>
-      </div>
-    <section>
-
     </section>
   </main>
 
@@ -54,6 +50,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

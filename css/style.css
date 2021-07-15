@@ -1,0 +1,44 @@
+/* Standard */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.sub-wrapper {
+  width: 100%;
+}
