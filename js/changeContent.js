@@ -14,11 +14,6 @@ export const showContent = (event) => {
   } 
 };
 
-export const addRefresh = (event) => {
-  if (!event.target.classList.contains('hide')) {
-    console.log(event.target.classList);
-  }
-}
 
 const jokes = document.getElementById('show-joke');
 const quotes = document.getElementById('show-quote');
