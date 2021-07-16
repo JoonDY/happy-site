@@ -1,5 +1,6 @@
-import { fetchAll } from "./getData.js";
+import { fetchAll } from "./getData.js"
 import { showContent } from "./changeContent.js"
+import { addRefresh} from "./changeContent.js"
 
 document.addEventListener('readystatechange', (event) => {
   if (event.target.readyState === 'complete') {
@@ -12,13 +13,14 @@ const initApp = () => {
 
   const btnJokes = document.getElementById('btn-jokes');
   const btnQuotes = document.getElementById('btn-quotes');
-  const btnRefresh = document.getElementById('btn-refresh');
   const btnDog = document.getElementById('btn-dog');
   const btnCat = document.getElementById('btn-cat');
 
   [btnJokes, btnQuotes, btnDog, btnCat].forEach((btn) => {
-    btn.addEventListener('click', showContent);
+    btn.addEventListener('click', (event) => {
+      showContent(event);
+    });
   });
 
-  btnRefresh.addEventListener('click', fetchAll);
+
 };

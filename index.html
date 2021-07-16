@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
   <title>Happy Sight</title>
 </head>
 <body>
@@ -22,7 +24,6 @@
       <div class="content-chooser">
         <button class="btn btn-jokes" id="btn-jokes">Jokes</button>
         <button class="btn btn-quotes" id="btn-quotes">Quotes</button>
-        <button class="btn btn-refresh" id="btn-refresh">Refresh</button>
       </div>
 
       <div class="content" id="content">
@@ -36,19 +37,13 @@
         <button class="btn btn-dog" id="btn-dog">Dog</button>
         <button class="btn btn-cat" id="btn-cat">Cat</button>
       </div>
-
-      <div class="animal-img">
-        <img class="dog-img hide" id="dog-img" src=""></img>
-        <img class="cat-img hide" id="cat-img" src=""></img>
+        <div class="animal-img flex">
+          <img class="dog-img hide" id="dog-img" src=""></img>
+          <img class="cat-img hide" id="cat-img" src=""></img>
+        </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    <div>
-      API credits
-    </div>
-  </footer>
 
   <script src="js/main.js" type="module"></script>
 </body>

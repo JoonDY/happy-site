@@ -19,7 +19,7 @@ const fetchSettings = {
     'Accept': 'application/json'
   }};
 
-const fetchJoke = () => {
+export const fetchJoke = () => {
   fetch('https://icanhazdadjoke.com/', fetchSettings)
   .then((response) => {
     return response.json();
@@ -30,7 +30,7 @@ const fetchJoke = () => {
 };
 
 
-const fetchQuote = () => {
+export const fetchQuote = () => {
   fetch('https://api.quotable.io/random', fetchSettings)
   .then((response) => {
     return response.json();
@@ -40,7 +40,7 @@ const fetchQuote = () => {
 });
 };
 
-const fetchDogImg = () => {
+export const fetchDogImg = () => {
   fetch('https://random.dog/woof.json?filter=mp4', fetchSettings)
   .then((response) => {
     return response.json();
@@ -50,7 +50,7 @@ const fetchDogImg = () => {
 });
 };
 
-const fetchCatImg = () => {
+export const fetchCatImg = () => {
   fetch('https://aws.random.cat/meow', fetchSettings)
   .then((response) => {
     return response.json();
